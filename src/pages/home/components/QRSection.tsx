@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { QR_TARGET } from '../../config/qr'
+import { QR_TARGET } from '../../../config/qr'
 
 const QRSection: React.FC = () => {
   // Generate a QR via Google Charts API as fallback (client-side)
