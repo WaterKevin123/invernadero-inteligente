@@ -1,10 +1,8 @@
-import { BrowserRouter } from 'react-router-dom'
+import React from 'react'
 import AppRoutes from './router'
+
 function App() {
-  return (
-    <BrowserRouter basename={__BASE_PATH__}>
-      <AppRoutes />
-    </BrowserRouter>
-  )
+  return <AppRoutes />
 }
+
 export default App
