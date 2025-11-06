@@ -4,7 +4,7 @@ import routes from './config';
 
 export const AppRoutes: React.FC = () => {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL || '/'}>
+    <BrowserRouter basename={import.meta.env.BASE_URL === './' ? '/' : import.meta.env.BASE_URL}>
       <Routes>
         {routes.map((r: any, i: number) => (
           <Route key={i} path={r.path} element={r.element} />
